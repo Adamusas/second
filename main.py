@@ -10,7 +10,7 @@ class CircleWidget(QtWidgets.QWidget):
     def paintEvent(self, event):
         diameter = random.randint(20, 100)
         painter = QtGui.QPainter(self)
-        painter.setBrush(QtGui.QColor(255, 255, 0))
+        painter.setBrush(QtGui.QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)))
         painter.drawEllipse(0, 0, diameter, diameter)
 
     def add_circle(self):
